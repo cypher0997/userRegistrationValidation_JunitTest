@@ -42,7 +42,7 @@ public class userRegistration {
         /**
          * @param regex contain the correct pattern for email
          */
-        String regex = "^[A-Za-z0-9+_-]+[.]@[A-Z a-z]+[.][a-z A-Z]{2,3}$";
+        String regex = "^[a-z0-9]{3,}(.[0-9a-z]+)*@[a-z]{2,}.(com|edu)(co.in)*$";
         Pattern p = Pattern.compile(regex);
         if (email == null) {
             return false;
